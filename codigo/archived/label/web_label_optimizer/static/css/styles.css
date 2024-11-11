@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@700&display=swap');
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.resizable-rect.blue {
+    border-color: blue;
+}
+
+.resizable-rect.red {
+    border-color: red;
+}
+
+.resizable-rect .resize-handle {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    position: absolute;
+}
+
+.resizable-rect .resize-handle.tl { top: -5px; left: -5px; cursor: nw-resize; }
+.resizable-rect .resize-handle.tr { top: -5px; right: -5px; cursor: ne-resize; }
+.resizable-rect .resize-handle.bl { bottom: -5px; left: -5px; cursor: sw-resize; }
+.resizable-rect .resize-handle.br { bottom: -5px; right: -5px; cursor: se-resize; }
+
+#maskContainer {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+#maskImage {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+}
+
+.cropRect {
+    position: absolute;
+    cursor: move;
+    resize: both;
+    overflow: auto;
+}
+
+.cropRect.blue {
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+.cropRect.red {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.cropRect {
+    position: absolute;
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    cursor: move;
+    resize: both;
+    overflow: auto;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+#imageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#cropArea, .cropRect {
+    position: absolute;
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    cursor: move;
+}
+
+.cropRect {
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+.side-button {
+    font-size: 24px;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+#cropCount {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>1094309</id>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-08-07 14:03:51.581280+00:00</created>
+      <updated>2024-08-07 14:32:35.803584+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>0</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>1096454</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>https://app.cvat.ai/api/jobs/1094309</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>PiemonteF</username>
+        <email>fabio.lopes@sou.inteli.edu.br</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Cabeça</name>
+          <color>#8d5282</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>olhos</name>
+          <color>#994802</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-07 14:37:25.223340+00:00</dumped>
+  </meta>
+  <image id="0" name="teste.png" width="239" height="233">
+    <polyline label="olhos" source="manual" occluded="0" points="139.79,66.44;127.11,79.39;126.85,94.63;134.87,102.97;153.03,105.28;160.48,92.91;157.89,71.04;142.07,65.87" z_order="0">
+    </polyline>
+    <polyline label="Cabeça" source="manual" occluded="1" points="77.63,20.99;73.03,36.53;53.47,37.10;42.54,52.35;64.11,72.48;71.88,80.25;73.89,107.00;75.36,128.00;70.44,143.25;56.66,159.35;43.11,173.74;45.44,205.09;59.51,220.34;87.15,218.61;121.10,207.97;128.86,190.71;154.18,153.31;167.98,133.47;170.83,110.17;175.18,100.38;209.41,88.02;226.95,77.08;225.23,56.09;215.13,44.58;199.91,37.68;185.79,40.55;179.17,45.73;173.42,32.50;168.24,13.80;156.45,5.17;129.44,4.02;100.36,7.18;77.37,20.70" z_order="0">
+    </polyline>
+  </image>
+</annotations>
